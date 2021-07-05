@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    background: rgb(180, 50, 50);
+    padding: 0 20PX;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    
+}
+
+nav ul{
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px 25px;
+    /* padding: 20px 30PX; */
+    transition: background .5s ease-in;
+
+}
+
+nav ul li a{
+    color: aliceblue;
+    font-size: 18px;
+}
+
+
+nav ul li:hover{
+ background: #000;
+
+}
+
+header{
+    height: 100vh;
+    background: repeating-linear-gradient(65deg, rgb(56, 56, 53),rgba(54, 48, 48, 0.897));
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+header p{
+    font-size: 28px;
+    font-style: italic;
+    color: rgb(180, 50, 50);
+}
+
+#work{
+    background: rgba(67, 67, 117, 0.801);
+    padding-top: 35px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+       
+}
+
+.works{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#work h2{
+    font-size: 30px;
+    color: #fff;
+    text-align:center;
+    border-bottom: 1.5px solid rgb(255, 255, 255);
+    margin-bottom: 30px;
+    
+}
+
+
+
+.work-card{
+    background: rgb(59, 59, 59);
+    width: 95%;
+    cursor: pointer;
+    margin-bottom: 30px;
+    box-shadow: -5px -5px 10px rgba(95, 92, 92, 0.959) , 5px 5px 10px rgba(95, 92, 92, 0.959);
+}
+
+.work-card img{
+    width: 100%;
+}
+
+.work-card h3{
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.work-card h3 .none{
+    opacity: 0;
+    color: rgb(180, 50, 50);
+    transition: opacity .3s ease ;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.work-card:hover .none{
+    opacity: 1;
+}
+
+.btn{
+    margin-top: 30px;
+    padding: 10px 15px;
+    font-size: 20px;
+    background: rgb(59, 59, 59);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background .5s ease-in-out ;
+
+}
+
+.btn:hover{
+    background: rgb(180, 50, 50);
+}
+
+footer{
+    background: #303841;
+    text-align: center;
+    margin: 0 auto;
+    color: #f0f0f0;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contact{
+    margin: auto;    
+}
+
+footer .contact div{
+    margin-bottom: 5rem;  
+    padding: 0 1rem;  
+}
+
+
+footer h3{
+    font-size: 35.2px;
+    font-family: sans-serif; 
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+footer ul li{
+    margin: auto;
+    font-size: 22px;
+    padding-bottom: 1.5rem;
+    transition: transform .3s ease-in;
+    
+}
+
+ footer ul li:hover{
+    transform: scale(1.2)
+}
+
+footer ul li a{
+    color: #f0f0f0;
+    margin: 0 1rem;
+}
+
+
+
+.horizontal{
+    width: 100%;
+    height: 3px;
+    background: rgb(180, 50, 50);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+@media (min-width:600px) {
+    nav ul li{
+        padding: 20px 30PX;
+    }
+
+    nav ul li a{
+        font-size: 25px;
+    }
+
+    .works{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+
+
+
+    .work-card{
+        width: 48%;
+
+    }
+
+
+
+}
+
+@media (min-width:950px){
+    .work-card{
+        width: 30%;
+        
+    }
+}
